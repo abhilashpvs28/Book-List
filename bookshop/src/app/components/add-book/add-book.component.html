@@ -1,0 +1,21 @@
+<div class="row justify-content-center mt-2">
+    <div class="col-md-5" style="border: 1px solid blue; border-radius: 5px;">
+        <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label >Name</label>
+                <input  class="form-control" placeholder="Book Name" type="text" formControlName="name" required>
+            </div>
+            <div class="form-group">
+                <label >Price</label>
+                <input class="form-control" placeholder="Book Price" type="text" formControlName="price" required>
+            </div>
+            <div class="form-group">
+                <label >Description</label>
+                <input class="form-control" placeholder="Book Description" type="text" formControlName="description" required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Add Book</button>
+            </div>
+        </form>
+    </div>
+</div>
